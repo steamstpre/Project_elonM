@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{237AB8DD-5E6A-3127-356C-B84A6CDC0A99}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Elon_project/Project_elon/Elon_Proj/Assets/scripts/PlayerMove.cs">
+    <Files>
+      <File FileName="Assets/scripts/PlayerMove.cs" Line="54" Column="1" />
+      <File FileName="../../Elon_project/Project_elon/Elon_Proj/Assets/scripts/PlayerMove.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Game_project" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="scripts" expanded="True">
+                <Node name="PlayerMove.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="10d4c598-8d86-4fc3-926c-ee86eaf8e6e1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

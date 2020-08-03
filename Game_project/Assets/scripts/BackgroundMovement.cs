@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BackgroundMovement : MonoBehaviour
 {
-    private float speed;
+    public static float speed;
     private GameObject bg;
     public string type;
     // Start is called before the first frame update

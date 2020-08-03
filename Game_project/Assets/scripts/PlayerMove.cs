@@ -13,29 +13,30 @@ public class PlayerMove : MonoBehaviour
     public bool Ground;
     public LayerMask WhatIsGround;
     private Collider2D _Cl;
-    public int score ;
+    public static int score;
     public Text scoreText;
     public Text coinText;
     public static int coinAmount;
+    
     void Start()
     {
-       
+
         extraJumps = extraJumpValue;
         _rg = GetComponent<Rigidbody2D>();
         _rg.constraints = RigidbodyConstraints2D.FreezeRotation;
         _Cl = GetComponent<Collider2D>();
-        
+
 
     }
     void Update()
     {
         Ground = Physics2D.IsTouchingLayers(_Cl, WhatIsGround);
         _rg.velocity = new Vector2(0, _rg.velocity.y);
-        
+        //extra jump 
         if (Ground)
         {
             extraJumps = extraJumpValue;
-            
+
         }
 
         if (Input.GetMouseButtonDown(0) && extraJumps > 0)
@@ -44,16 +45,18 @@ public class PlayerMove : MonoBehaviour
 
             _rg.velocity = new Vector2(_rg.velocity.x, JumpForce);
             extraJumps--;
-           
+
         }
         else if (Input.GetMouseButtonDown(0) && Ground && extraJumps == 0)
         {
             _rg.velocity = new Vector2(_rg.velocity.x, JumpForce);
-           
+
         }
         score++;
         scoreText.text = score.ToString();
         coinText.text = coinAmount.ToString();
+
+
     }
- 
+    
 }

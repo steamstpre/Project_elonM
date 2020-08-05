@@ -15,6 +15,7 @@ MonoBehaviour:
   player: {fileID: 1713723080867800007, guid: 1105bf1f706dbcb4b80400c891777872, type: 3}
   loosePanel: {fileID: 2872489180059082866, guid: 9d70e3d38b6f74de2a522a52c4e4117c,
     type: 3}
+  pan: {fileID: 2872489180059082866, guid: 9d70e3d38b6f74de2a522a52c4e4117c, type: 3}
 --- !u!1 &3843550203448063128
 GameObject:
   m_ObjectHideFlags: 0

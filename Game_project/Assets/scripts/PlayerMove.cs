@@ -17,7 +17,10 @@ public class PlayerMove : MonoBehaviour
     public Text scoreText;
     public Text coinText;
     public static int coinAmount;
-    
+    public static bool death = false;
+    public GameObject loosePanel;
+    private int newScore;
+
     void Start()
     {
 
@@ -32,6 +35,7 @@ public class PlayerMove : MonoBehaviour
     {
         Ground = Physics2D.IsTouchingLayers(_Cl, WhatIsGround);
         _rg.velocity = new Vector2(0, _rg.velocity.y);
+        
         //extra jump 
         if (Ground)
         {
@@ -52,11 +56,42 @@ public class PlayerMove : MonoBehaviour
             _rg.velocity = new Vector2(_rg.velocity.x, JumpForce);
 
         }
-        score++;
-        scoreText.text = score.ToString();
+        //score++;
+        //scoreText.text = score.ToString();
+        dead();
         coinText.text = coinAmount.ToString();
+        
 
 
     }
-    
+    void dead()
+    {
+
+        switch (death)
+        {
+            case false:
+                
+                score++;
+                scoreText.text = score.ToString();
+                break;
+            case true:
+                score = newScore;
+                scoreText.text = newScore.ToString();
+                break;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.CompareTag("Kill_zone"))
+        {
+            
+            BackgroundMovement.speed = 0;
+            ChunkGenerator.speed = 0;
+            loosePanel.SetActive(true);
+            score = newScore;
+            scoreText.text = newScore.ToString();
+            death = true;
+        }
+    }
 }

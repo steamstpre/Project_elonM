@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Kill_pl : MonoBehaviour
 {
-    public GameObject player;
+   /* public GameObject player;
     public GameObject loosePanel;
     private int score;
+    public GameObject pan;
     void Start()
     {
         PlayerMove.score = score;
@@ -18,9 +19,10 @@ public class Kill_pl : MonoBehaviour
             BackgroundMovement.speed = 0;
             ChunkGenerator.speed = 0;
             loosePanel.SetActive(true);
+          
             //score = score;
             //animation of die and panel with restart
         }
 
-    }
+    }*/
 }

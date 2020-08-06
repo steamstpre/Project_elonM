@@ -8,6 +8,7 @@ public class BackgroundMovement : MonoBehaviour
     public static float speed;
     private GameObject bg;
     public string type;
+    public bool startImm; //if true, platform will move immidiatly   
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,7 @@ public class BackgroundMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ButtonStart.start)
+        if (ButtonStart.start||startImm)
         {
             switch (type)
             {

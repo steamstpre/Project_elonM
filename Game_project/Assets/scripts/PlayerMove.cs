@@ -17,9 +17,11 @@ public class PlayerMove : MonoBehaviour
     public Text scoreText;
     public Text coinText;
     public static int coinAmount;
+    private Animator animator;
     
     void Start()
     {
+        animator = GetComponent<Animator>();
 
         extraJumps = extraJumpValue;
         _rg = GetComponent<Rigidbody2D>();
@@ -35,8 +37,13 @@ public class PlayerMove : MonoBehaviour
         //extra jump 
         if (Ground)
         {
+            animator.SetBool("onGround", true);
             extraJumps = extraJumpValue;
 
+        }
+        else
+        {
+            animator.SetBool("onGround", false);
         }
 
         if (Input.GetMouseButtonDown(0) && extraJumps > 0)

@@ -10,6 +10,7 @@ public class ChunkGenerator : MonoBehaviour
     public static float speed = 0.1f;
     public GameObject[] chunks;
     private bool gaveChild;
+    public bool startImm;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,7 @@ public class ChunkGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ButtonStart.start)
+        if (ButtonStart.start||startImm)
         {
             Vector3 pos = transform.position;
             pos.x -= speed;

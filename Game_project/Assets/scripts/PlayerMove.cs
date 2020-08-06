@@ -52,12 +52,12 @@ public class PlayerMove : MonoBehaviour
 
             _rg.velocity = new Vector2(_rg.velocity.x, JumpForce);
             extraJumps--;
-            animator.SetTrigger("Jump");
+
         }
         else if (Input.GetMouseButtonDown(0) && Ground && extraJumps == 0)
         {
             _rg.velocity = new Vector2(_rg.velocity.x, JumpForce);
-            animator.SetTrigger("Jump");
+
         }
         score++;
         scoreText.text = score.ToString();

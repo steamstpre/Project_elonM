@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{237AB8DD-5E6A-3127-356C-B84A6CDC0A99}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Kill_pl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/enamy.cs">
     <Files>
-      <File FileName="Assets/scripts/PlayerMove.cs" Line="61" Column="5" />
-      <File FileName="Assets/scripts/ButtonStart.cs" Line="25" Column="29" />
-      <File FileName="Assets/scripts/Kill_pl.cs" Line="16" Column="6" />
+      <File FileName="Assets/scripts/PlayerMove.cs" Line="147" Column="26" />
+      <File FileName="Assets/scripts/Coin.cs" Line="11" Column="6" />
+      <File FileName="Assets/scripts/enamy.cs" Line="14" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +11,7 @@
           <Node name="Game_project" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="scripts" expanded="True">
-                <Node name="Kill_pl.cs" selected="True" />
+                <Node name="enamy.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -21,7 +21,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4a60e68b-3645-428c-ba93-6ee2d40a8694" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2f191949-014b-41d0-9e19-8993238a69a7" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

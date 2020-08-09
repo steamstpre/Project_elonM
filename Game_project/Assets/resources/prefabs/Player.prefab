@@ -145,7 +145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bac3a5950a8af154399a076592c10f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpForce: 29
   extraJumpValue: 0
   Ground: 1
   WhatIsGround:
@@ -153,6 +152,10 @@ MonoBehaviour:
     m_Bits: 256
   scoreText: {fileID: 0}
   coinText: {fileID: 0}
+  loosePanel: {fileID: 0}
+  CyberTruck: {fileID: 0}
+  spriteArray: []
+  sp: {fileID: 0}
 --- !u!95 &1713723080867800013
 Animator:
   serializedVersion: 3

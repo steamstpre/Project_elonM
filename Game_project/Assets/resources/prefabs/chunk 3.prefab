@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &390045234975419560
+--- !u!114 &2770522127489371028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3407932723198333177}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a58ab2866bc14b34ac0101ec0254013, type: 3}
+  m_Script: {fileID: 11500000, guid: 87581b2bb966f49cab7f23df6e731b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1713723080867800007, guid: 1105bf1f706dbcb4b80400c891777872, type: 3}
-  loosePanel: {fileID: 2872489180059082866, guid: 9d70e3d38b6f74de2a522a52c4e4117c,
-    type: 3}
 --- !u!1 &3843550203448063128
 GameObject:
   m_ObjectHideFlags: 0
@@ -69,6 +66,7 @@ MonoBehaviour:
   - {fileID: 3843550203448063128}
   - {fileID: 3843550203448063128, guid: 3bf39ad724e612f499b37055133ec18d, type: 3}
   - {fileID: 3843550203448063128, guid: 892e2e3ed7e30974db009c41cdac14d4, type: 3}
+  startImm: 0
 --- !u!1 &3843550203684926136
 GameObject:
   m_ObjectHideFlags: 0

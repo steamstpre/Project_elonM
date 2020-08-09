@@ -107,7 +107,7 @@ public class PlayerMove : MonoBehaviour
                 health -= 20;
                
                 loosePanel.SetActive(false);
-                if(health == 0)
+                if(health <= 0)
                 {
                     animator.GetComponent<Animator>().enabled = true;
                     sp.sprite = spriteArray[0];

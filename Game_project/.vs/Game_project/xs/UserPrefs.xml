@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/enamy.cs">
     <Files>
       <File FileName="Assets/scripts/PlayerMove.cs" Line="147" Column="26" />
-      <File FileName="Assets/scripts/Coin.cs" Line="11" Column="6" />
-      <File FileName="Assets/scripts/enamy.cs" Line="14" Column="13" />
+      <File FileName="Assets/scripts/Coin.cs" />
+      <File FileName="Assets/scripts/enamy.cs" Line="18" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

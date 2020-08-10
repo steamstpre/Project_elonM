@@ -7,8 +7,8 @@ using UnityEngine.Sprites;
 
 public class PlayerMove : MonoBehaviour
 {
-    public static float JumpForce;
-    private int extraJumps;
+    public float JumpForce = 2f;
+    public static int extraJumps;
     public int extraJumpValue;
     private Rigidbody2D _rg;
     public bool Ground;
@@ -23,10 +23,10 @@ public class PlayerMove : MonoBehaviour
     private int newScore;
     private Animator animator;
     public Image CyberTruck;
-    public  Sprite[] spriteArray;
+    public Sprite[] spriteArray;
     public static SpriteRenderer sp;
     public static bool g;
- 
+
     public static int health = 10;
     void Start()
     {
@@ -36,7 +36,7 @@ public class PlayerMove : MonoBehaviour
         _rg.constraints = RigidbodyConstraints2D.FreezeRotation;
         _Cl = GetComponent<Collider2D>();
         sp = GetComponent<SpriteRenderer>();
-       
+
 
 
     }
@@ -44,7 +44,7 @@ public class PlayerMove : MonoBehaviour
     {
         Ground = Physics2D.IsTouchingLayers(_Cl, WhatIsGround);
         _rg.velocity = new Vector2(0, _rg.velocity.y);
-        
+
         //extra jump 
         if (Ground)
         {
@@ -70,13 +70,13 @@ public class PlayerMove : MonoBehaviour
             _rg.velocity = new Vector2(_rg.velocity.x, JumpForce);
 
         }
-        
-        
+
+
         dead();
         coinText.text = coinAmount.ToString();
         PlayerPrefs.SetInt("Coins", coinAmount);
-        
-       
+
+
 
     }
     void ChangeSp()
@@ -85,19 +85,20 @@ public class PlayerMove : MonoBehaviour
         // sp.sprite = CyberTruck;
         animator.GetComponent<Animator>().enabled = false;
         sp.sprite = spriteArray[1];
-        if(sp.sprite == CyberTruck)
+        if (sp.sprite == CyberTruck)
         {
             Debug.Log("real shit");
         }
-        if(sp.sprite == null)
+        if (sp.sprite == null)
         {
             Debug.Log("pipka");
         }
         Debug.Log("xita");
-       
+        g = true;
 
 
-        }
+
+    }
     void CyberTruckHealth()
     {
         void OnCollisionEnter2D(Collision2D collision)
@@ -105,18 +106,19 @@ public class PlayerMove : MonoBehaviour
             if (collision.transform.CompareTag("Kill_zone"))
             {
                 health -= 20;
-               
+
                 loosePanel.SetActive(false);
-                if(health <= 0)
+                if (health == 0)
                 {
                     animator.GetComponent<Animator>().enabled = true;
                     sp.sprite = spriteArray[0];
+                    g = false;
                 }
             }
 
         }
     }
-    
+
     void dead()
     {
 
@@ -155,7 +157,7 @@ public class PlayerMove : MonoBehaviour
                 scoreText.text = newScore.ToString();
                 death = true;
             }
-           
+
         }
 
     }
@@ -167,7 +169,11 @@ public class PlayerMove : MonoBehaviour
             Debug.Log("yes");
             CyberTruckHealth();
             g = true;
-            
+
+        }
+        if (collision.tag == "Rocket")
+        {
+
         }
     }
 

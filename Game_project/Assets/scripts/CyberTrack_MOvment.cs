@@ -25,7 +25,7 @@ public class CyberTrack_MOvment : MonoBehaviour
             Destroy(gameObject);
 
             
-            PlayerMove.JumpForce += increaseSpeed;
+            
             
         }
     }

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class TextHandler : MonoBehaviour
 {
-    private string text = "Привет. Вижу ты собираешь акции теслы. Но как профессионал, скажу тебе, она просто пузырь, который скоро лопнет. \n Но не переживай.Ты можешь сейчас же купить у меня акции тойоты и со временем приумножить свое состояние в разы.";
+    public string text;
     public Text uiText;
     private int characterIndex;
     private float timePerCharacter;

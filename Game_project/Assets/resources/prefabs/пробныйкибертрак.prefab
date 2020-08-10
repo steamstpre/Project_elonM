@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 378993443360155925}
   - component: {fileID: 6268338231088298254}
   - component: {fileID: 3732547721510628291}
-  - component: {fileID: 2481636310392958426}
   - component: {fileID: 8270848661652104665}
-  - component: {fileID: -1970086969434447795}
+  - component: {fileID: -2112981101011491461}
+  - component: {fileID: -7673411066418693872}
   m_Layer: 0
   m_Name: "\u043F\u0440\u043E\u0431\u043D\u044B\u0438\u0306\u043A\u0438\u0431\u0435\u0440\u0442\u0440\u0430\u043A"
   m_TagString: Truck
@@ -111,19 +111,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.7, y: 2.24}
   m_EdgeRadius: 0
---- !u!114 &2481636310392958426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6514583634373971261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c2c5a2609e974cd8bf201a84354df46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move_speed: 4
 --- !u!114 &8270848661652104665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,25 +123,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab5a677d8d23f418298278b7b4ba8f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  increaseSpeed: 4
   Player: {fileID: 0}
   CyberTruck: {fileID: 0}
---- !u!95 &-1970086969434447795
-Animator:
-  serializedVersion: 3
+--- !u!114 &-2112981101011491461
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6514583634373971261}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 014501dab2a4d804f81c101bd941d9d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnChance: 0
+--- !u!114 &-7673411066418693872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6514583634373971261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c2c5a2609e974cd8bf201a84354df46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move_speed: 0.5

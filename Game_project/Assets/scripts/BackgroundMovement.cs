@@ -10,6 +10,7 @@ public class BackgroundMovement : MonoBehaviour
     public string type;
     public bool startImm; //if true, platform will move immidiatly   
     // Start is called before the first frame update
+    public string lvlRoute;
     void Start()
     {
      
@@ -42,16 +43,16 @@ public class BackgroundMovement : MonoBehaviour
                 switch (type)
                 {
                     case "far":
-                        bg = (GameObject)Resources.Load("prefabs/back", typeof(GameObject));
-                        newBg = Instantiate(bg, new Vector3(54.8f, 0, 1), transform.rotation);
+                        bg = (GameObject)Resources.Load(lvlRoute + "back", typeof(GameObject));
+                        newBg = Instantiate(bg, new Vector3(54.8f, gameObject.transform.position.y, 1), transform.rotation);
                         break;
                     case "middle":
-                        bg = (GameObject)Resources.Load("prefabs/middle", typeof(GameObject));
-                        newBg = Instantiate(bg, new Vector3(54.8f, 0, 0.8f), transform.rotation);
+                        bg = (GameObject)Resources.Load(lvlRoute + "middle", typeof(GameObject));
+                        newBg = Instantiate(bg, new Vector3(54.8f, gameObject.transform.position.y, 0.8f), transform.rotation);
                         break;
                     case "close":
-                        bg = (GameObject)Resources.Load("prefabs/close", typeof(GameObject));
-                        newBg = Instantiate(bg, new Vector3(54.8f, 8, 0.5f), transform.rotation);
+                        bg = (GameObject)Resources.Load(lvlRoute + "close", typeof(GameObject));
+                        newBg = Instantiate(bg, new Vector3(54.8f, gameObject.transform.position.y, 0.5f), transform.rotation);
                         break;
                 }
                

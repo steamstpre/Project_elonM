@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class enamy : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.CompareTag("Player"))
+        if (collision.tag == "Player" && PlayerMove.g == true)
         {
-            Destroy(gameObject);
-            PlayerMove.health -= 50;
-            Debug.Log("true");
-            Debug.Log(PlayerMove.health);
-
-
+            
+                Destroy(gameObject);
+                PlayerMove.health -= 50;
+            
+            
         }
     }
 }

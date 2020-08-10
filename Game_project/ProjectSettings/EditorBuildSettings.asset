@@ -20,4 +20,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/theEnd.unity
     guid: b5662d0624fb738489de2c467d0af701
+  - enabled: 1
+    path: Assets/Scenes/ComicsLvl3.unity
+    guid: ad000d875a5c395418abbdcd89b07d55
+  - enabled: 1
+    path: Assets/Scenes/lvl3.unity
+    guid: bfcda061ec639ee4090e6e3a9dc7cc19
+  - enabled: 1
+    path: Assets/Scenes/ComicsLvl4.unity
+    guid: 40e66214cff8da44f84b4a0d763a3205
+  - enabled: 1
+    path: Assets/Scenes/lvl4.unity
+    guid: 415181c2137b33f4288a9079c3115c51
+  - enabled: 1
+    path: Assets/Scenes/ComicsFinal.unity
+    guid: 2590c327d7395a641928417c7b3a8b15
+  - enabled: 1
+    path: Assets/Scenes/ComicsLvl5.unity
+    guid: 4b1944235a93ae244a09533584fe3146
+  - enabled: 1
+    path: Assets/Scenes/lvl5.unity
+    guid: 51f62650ada52604a8dd2cc10a5162f3
   m_configObjects: {}

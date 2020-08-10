@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CyberTrack_MOvment : MonoBehaviour
 {
-    public float increaseSpeed = 0.2f;
+    public static float increaseSpeed = 0.09f;
     public GameObject Player;
     public Sprite CyberTruck;
     private SpriteRenderer sp;
@@ -20,12 +20,12 @@ public class CyberTrack_MOvment : MonoBehaviour
 
             // Player.gameObject.GetComponent<SpriteRenderer>().sprite = CyberTruck;
             //sp.sprite = CyberTruck;
-            BackgroundMovement.speed += increaseSpeed;
+          //  BackgroundMovement.speed += increaseSpeed;
             ChunkGenerator.speed += increaseSpeed;
             Destroy(gameObject);
 
             
-            
+           /* PlayerMove.JumpForce += increaseSpeed;*/
             
         }
     }

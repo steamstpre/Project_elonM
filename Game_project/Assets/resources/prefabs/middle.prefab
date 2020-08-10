@@ -95,3 +95,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: middle
+  startImm: 0
+  lvlRoute: prefabs/

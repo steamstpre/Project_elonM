@@ -96,3 +96,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: far
   startImm: 1
+  lvlRoute: prefabs/lvl2/

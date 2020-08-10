@@ -7,7 +7,7 @@ public class ChunkGenerator : MonoBehaviour
 {
   //  private GameObject spawner;
     private GameObject chunk;
-    public static float speed = 0.1f;
+    public static float speed = 0.3f;
     public GameObject[] chunks;
     private bool gaveChild;
     public bool startImm;
@@ -35,7 +35,7 @@ public class ChunkGenerator : MonoBehaviour
                 chunk = chunks[i];
              //   chunk = (GameObject)Resources.Load("prefabs/chunk", typeof(GameObject));
                 // GameObject newChunk = Instantiate(chunk, spawner.transform.position, spawner.transform.rotation);
-                GameObject newChunk = Instantiate(chunk, new Vector3(71.2f, 0f), transform.rotation);
+                GameObject newChunk = Instantiate(chunk, new Vector3(71.05f, 0f), transform.rotation);
                 newChunk.name = chunk.name;
             }
             if(transform.position.x < (-35.75f))

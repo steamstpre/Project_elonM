@@ -73,12 +73,12 @@
     <Compile Include="Assets\scripts\PlatformAboveFix.cs" />
     <Compile Include="Assets\scripts\PlatformGenerator.cs" />
     <Compile Include="Assets\scripts\PlayerMove.cs" />
-    <Compile Include="Assets\scripts\Rocket.cs" />
     <Compile Include="Assets\scripts\SceneChanger.cs" />
     <Compile Include="Assets\scripts\Simple_move_truck.cs" />
     <Compile Include="Assets\scripts\TextHandler.cs" />
     <Compile Include="Assets\scripts\TextWriter.cs" />
     <Compile Include="Assets\scripts\enamy.cs" />
+    <Compile Include="Assets\scripts\loosePanel.cs" />
     <Compile Include="Assets\scripts\randomSpawn.cs" />
     <None Include="Assets\resources\fonts\Roboto\LICENSE.txt" />
     <Reference Include="UnityEngine">

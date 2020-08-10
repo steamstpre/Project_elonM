@@ -106,7 +106,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &1713723080867800011
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -120,7 +120,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.019060016}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -149,13 +149,12 @@ MonoBehaviour:
   Ground: 1
   WhatIsGround:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 4294967295
   scoreText: {fileID: 0}
   coinText: {fileID: 0}
   loosePanel: {fileID: 0}
   CyberTruck: {fileID: 0}
   spriteArray: []
-  sp: {fileID: 0}
 --- !u!95 &1713723080867800013
 Animator:
   serializedVersion: 3
@@ -169,7 +168,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: e6e27e1ffd886664e82022c5e8ae8386, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1

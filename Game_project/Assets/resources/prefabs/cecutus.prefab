@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 8136657780696014985}
   - component: {fileID: 1441376986706071523}
   - component: {fileID: 6423421728552194754}
-  - component: {fileID: 6021244556057392737}
   m_Layer: 0
   m_Name: cecutus
-  m_TagString: Untagged
+  m_TagString: Kill_zone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,15 +108,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.02, y: 3.22}
   m_EdgeRadius: 0
---- !u!114 &6021244556057392737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7785642857041675417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87581b2bb966f49cab7f23df6e731b25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

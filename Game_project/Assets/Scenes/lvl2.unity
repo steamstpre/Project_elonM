@@ -358,7 +358,7 @@ PrefabInstance:
     - target: {fileID: 1713723080867800009, guid: 1105bf1f706dbcb4b80400c891777872,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.15
+      value: -13
       objectReference: {fileID: 0}
     - target: {fileID: 1713723080867800009, guid: 1105bf1f706dbcb4b80400c891777872,
         type: 3}
@@ -409,6 +409,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713723080867800010, guid: 1105bf1f706dbcb4b80400c891777872,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1713723080867800011, guid: 1105bf1f706dbcb4b80400c891777872,
         type: 3}
@@ -673,7 +678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 167388912}
-  nextScene: Comics1
+  nextScene: ComicsLvl3
   maxScore: 10000
 --- !u!81 &1038056605
 AudioListener:

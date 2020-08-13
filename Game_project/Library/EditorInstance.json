@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
 	"process_id" : 5410,
+=======
+	"process_id" : 33893,
+>>>>>>> Stashed changes
 	"version" : "2019.4.4f1",
 	"app_path" : "/Users/momo/Documents/unity/2019.4.4f1/Unity.app",
 	"app_contents_path" : "/Users/momo/Documents/unity/2019.4.4f1/Unity.app/Contents"

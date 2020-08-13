@@ -1,17 +1,25 @@
 ﻿<Properties StartupConfiguration="{237AB8DD-5E6A-3127-356C-B84A6CDC0A99}|">
+<<<<<<< Updated upstream
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/PlayerMove.cs">
     <Files>
       <File FileName="Assets/scripts/PlayerMove.cs" Line="17" Column="11" />
       <File FileName="Assets/scripts/ButtonStart.cs" />
       <File FileName="Assets/scripts/Kill_pl.cs" Line="21" Column="15" />
     </Files>
+=======
+  <MonoDevelop.Ide.Workbench>
+>>>>>>> Stashed changes
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Game_project" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="scripts" expanded="True">
+<<<<<<< Updated upstream
                 <Node name="PlayerMove.cs" selected="True" />
+=======
+                <Node name="Coin.cs" selected="True" />
+>>>>>>> Stashed changes
               </Node>
             </Node>
           </Node>
